@@ -8,11 +8,11 @@ This project is **Task 1** of my [CodeAlpha](https://www.codealpha.tech/) tasks.
 
 | New game | Extra hint |
 | :---: | :---: |
-| ![New game](Hangman-Web/Screenshots/start.png) | ![Extra hint](screenshots/hint.png) |
+| ![New game](Hangman-Web/Screenshots/start.png) | ![Extra hint](Hangman-Web/Screenshots/hint.png) |
 
 | Win | Loss |
 | :---: | :---: |
-| ![Win](screenshots/win.png) | ![Loss](screenshots/lose.png) |
+| ![Win](Hangman-Web/Screenshots/win.png) | ![Loss](Hangman-Web/Screenshots/lose.png) |
 
 ## Features
 

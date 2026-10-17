@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hangman</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Hangman</h1>
+    <p class="score">Won <strong id="wins">0</strong> &nbsp; Lost <strong id="losses">0</strong></p>
+  </header>
+
+  <svg class="gallows" viewBox="0 0 120 140" role="img" aria-label="Hangman drawing" id="gallows">
+    <g class="frame">
+      <line x1="16" y1="130" x2="104" y2="130"/>
+      <line x1="36" y1="130" x2="36" y2="14"/>
+      <line x1="36" y1="14" x2="80" y2="14"/>
+      <line x1="80" y1="14" x2="80" y2="28"/>
+    </g>
+    <circle class="part" cx="80" cy="38" r="10"/>
+    <line class="part" x1="80" y1="48" x2="80" y2="88"/>
+    <line class="part" x1="80" y1="58" x2="64" y2="74"/>
+    <line class="part" x1="80" y1="58" x2="96" y2="74"/>
+    <line class="part" x1="80" y1="88" x2="66" y2="112"/>
+    <line class="part" x1="80" y1="88" x2="94" y2="112"/>
+  </svg>
+
+  <div class="word" id="word"></div>
+
+  <section class="hints" aria-label="Hints">
+    <p id="clue" class="clue"></p>
+    <p id="extra" class="clue extra" hidden></p>
+    <button class="link" id="hintBtn" type="button">Show extra hint</button>
+  </section>
+
+  <p class="status" id="status" role="status" aria-live="polite"></p>
+
+  <div class="keys" id="keys"></div>
+
+  <div class="foot">
+    <span>Wrong guesses: <strong id="count">0</strong> of 6<span id="wrongList"></span></span>
+    <button class="new" id="newGame" type="button">New game</button>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
